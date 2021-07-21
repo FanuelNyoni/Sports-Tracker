@@ -48,7 +48,7 @@ class CreateExercise extends Component {
 
   onChangeDate(date) {
     this.setState({
-      date: date
+      date: date,
     });
   }
 
@@ -64,7 +64,7 @@ class CreateExercise extends Component {
 
     console.log(exercise);
 
-    window.location = "/";
+    //window.location = "/";
   }
 
   render() {
@@ -118,6 +118,13 @@ class CreateExercise extends Component {
               ></DatePicker>
             </div>
           </div>
+          <div className="form-group">
+              <input
+                type="submit"
+                value="Create Exercise log"
+                className="btn btn-primary"
+              ></input>
+            </div>
         </form>
       </div>
     );
